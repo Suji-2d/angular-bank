@@ -1,0 +1,333 @@
+<br>
+<h1>update your profile!</h1>
+
+<mat-horizontal-stepper class="stepper">
+
+  <form [formGroup]="applyLoanForm" class="example-form">
+
+    <mat-step [stepControl]="firstFormGroup">
+
+      <ng-template matStepLabel>Fill out General details</ng-template>
+
+      <mat-grid-list cols="1" rowHeight="18:1">
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label>loanType</mat-label>
+
+            <input matInput [(ngModel)]="loanType" placeholder="enter Loan Type" formControlName="loanType" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label>loanAmount</mat-label>
+
+            <input matInput placeholder="enter name" formControlName="loanAmount" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label>loanApplyDate</mat-label>
+
+            <input matInput placeholder="enter name" formControlName="loanApplyDate" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label></mat-label>
+
+            <input matInput placeholder="enter name" formControlName="loanIssueDate" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label>rateOfInterest</mat-label>
+
+            <input matInput placeholder="enter name" formControlName="rateOfInterest" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+
+          <mat-form-field>
+
+            <mat-label>duration</mat-label>
+
+            <input matInput placeholder="enter name" formControlName="duration" required>
+
+          </mat-form-field>
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+      <div>
+
+        <button mat-flat-button color="accent" matStepperNext>Next</button>
+
+      </div>
+
+    </mat-step>
+
+  </form>
+  
+    <mat-step [stepControl]="secondFormGroup">
+        <ng-template matStepLabel>Fill out Loan details</ng-template>
+
+     <form  [formGroup]="educationalLoanForm"  class="example-form">
+
+          <mat-grid-list cols="1" rowHeight="18:1">
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>State</mat-label>
+
+                <input matInput placeholder="enter state" formControlName="courseFee" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Country</mat-label>
+
+                <input matInput placeholder="enter country" formControlName="course" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Email Id</mat-label>
+
+                <input matInput placeholder="enter emailId" formControlName="fatherName" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Gender</mat-label>
+
+                <input matInput placeholder="enter gender" formControlName="fatherOccupation" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Marital Status</mat-label>
+
+                <input matInput placeholder="enter maritalStatus" formControlName="fatherTotalExperience" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Contact No.</mat-label>
+
+                <input matInput placeholder="enter contactNo" formControlName="fatherCurrentExperience" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>DOB</mat-label>
+
+                <input matInput placeholder="enter dob" formControlName="rationCardNo" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>DOB</mat-label>
+
+                <input matInput placeholder="enter dob" formControlName="annualIncome" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+          </mat-grid-list>
+
+          <div>
+
+            <button mat-flat-button color="warn" matStepperPrevious>Back</button>
+
+            <button mat-flat-button color="accent" matStepperNext>Next</button>
+
+          </div>
+
+        </form>
+
+        <form [formGroup]="personalLoanForm" class="example-form">
+
+          <mat-grid-list cols="1" rowHeight="18:1">
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>State</mat-label>
+
+                <input matInput placeholder="enter state" formControlName="annualIncome" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Country</mat-label>
+
+                <input matInput placeholder="enter country" formControlName="companyName" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Email Id</mat-label>
+
+                <input matInput placeholder="enter emailId" formControlName="designation" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Gender</mat-label>
+
+                <input matInput placeholder="enter gender" formControlName="totalExperience" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+              <mat-form-field>
+
+                <mat-label>Marital Status</mat-label>
+
+                <input matInput placeholder="enter maritalStatus" formControlName="currentExperience" required>
+
+              </mat-form-field>
+
+            </mat-grid-tile>
+
+          </mat-grid-list>
+
+
+
+          <div>
+
+            <button mat-flat-button color="warn" matStepperPrevious>Back</button>
+
+            <button mat-flat-button color="accent" matStepperNext>Next</button>
+
+          </div>
+
+        </form>
+  
+
+    </mat-step>
+
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+
+    <p text-color="white">You are now done.</p>
+
+    <div>
+
+      <button mat-flat-button color="warn" matStepperPrevious>Back</button>
+
+      <button mat-flat-button color="primary" (click)=onFormSubmit()>Submit</button>
+
+      <button mat-flat-button color="warn" (click)="stepper.reset()">Reset</button>
+
+    </div>
+
+  </mat-step>
+
+</mat-horizontal-stepper>
